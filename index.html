@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav collapsible">
+            <a class="nav__brand" href="#"><img src="images/logo.svg" alt=""></a>
+
+            <!-- SVG START -->
+
+            <svg id="light" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                xmlns="http://www.w3.org/2000/svg" class="icon icon--white nav__toggler">
+                <g>
+                    <path
+                        d="m21.5 24h-19c-1.379 0-2.5-1.122-2.5-2.5v-19c0-1.378 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5v19c0 1.378-1.121 2.5-2.5 2.5zm-19-23c-.827 0-1.5.673-1.5 1.5v19c0 .827.673 1.5 1.5 1.5h19c.827 0 1.5-.673 1.5-1.5v-19c0-.827-.673-1.5-1.5-1.5z" />
+                </g>
+                <g>
+                    <path d="m16.5 8h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                </g>
+                <g>
+                    <path d="m16.5 12.5h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                </g>
+                <g>
+                    <path d="m16.5 17h-9c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h9c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+                </g>
+            </svg>
+            <!-- SVG END -->
+
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">Hosting</a></li>
+                <li class="nav__item"><a href="#">VPS</a></li>
+                <li class="nav__item"><a href="#">Domain</a></li>
+                <li class="nav__item"><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Nav Bar end -->
+
+    <!-- Hero starts -->
+    <section class="block block--dark block--skewed-right">
+        <div class="container grid grid--cols2">
+            <header class="block__header hero__content">
+                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <p class="hero__tagline">Deploy your websites in less than 60 seconds.</p>
+                <a class="btn btn--accent btn--stretch" href="#">Get Started</a>
+            </header>
+            <picture>
+                <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+                <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+                <img class="hero__image" src="images/banner.webp" alt="">
+            </picture>
+        </div>
+    </section>
+    <!-- Hero Ends -->
+
+    <!-- Domain Block -->
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h2>Starting at $9 per Month</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, laboriosam.</p>
+        </header>
+        <div class="input-group">
+            <input type="text" name="" id="" class="input" placeholder="Enter Domain Name Here!" />
+            <button class="btn btn--accent"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 21.8 23.8" class="icon">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #ecf6fc;
+                            }
+                        </style>
+                    </defs>
+                    <path class="cls-1"
+                        d="M11,17.9a8.7,8.7,0,0,0,.8,4.8,1,1,0,0,0,1.2.4.8.8,0,0,0,.4-1.2,8.3,8.3,0,0,1-.7-3.8,7.6,7.6,0,0,1,15.2,1.1A7.7,7.7,0,0,1,16.1,25a.8.8,0,0,0-1.2.2.9.9,0,0,0,.2,1.3A10,10,0,0,0,19.6,28a9.3,9.3,0,0,0,6.1-1.7l5.5,6.4a.9.9,0,0,0,.6.3.7.7,0,0,0,.7-.2.9.9,0,0,0,.1-1.2L27,25.2a8.9,8.9,0,0,0,2.6-5.8A9.3,9.3,0,1,0,11,17.9Z"
+                        transform="translate(-10.9 -9.3)" />
+                </svg> Search</button>
+        </div>
+
+        <ul class="list block-domain__prices">
+            <li><span class="badge badge--secondary">.com $9</span></li>
+            <li>.sg $10</li>
+            <li>.space $11</li>
+            <li>.info $14</li>
+            <li>.net $10</li>
+            <li>.xyz $10</li>
+        </ul>
+    </section>
+
+    <!-- Domain Block Ends -->
+
+    <!-- Plans Block -->
+    <section class="block container block-plans">
+        <div class="grid grid--cols3">
+
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$14</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <span class="plan__description">Easy Start on the Cloud</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Unlimited Websites</li>
+                            <li class="list__item">Unlimited Bandwidth</li>
+                            <li class="list__item">100 GB SSD Storage</li>
+                            <li class="list__item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- 2 -->
+
+
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$14</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--primary badge--small">10% OFF</span>
+                        <span class="plan__description">Easy Start on the Cloud</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Unlimited Websites</li>
+                            <li class="list__item">Unlimited Bandwidth</li>
+                            <li class="list__item">100 GB SSD Storage</li>
+                            <li class="list__item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 3 -->
+
+
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$14</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <span class="plan__description">Easy Start on the Cloud</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">Unlimited Websites</li>
+                            <li class="list__item">Unlimited Bandwidth</li>
+                            <li class="list__item">100 GB SSD Storage</li>
+                            <li class="list__item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Plans Block End -->
+
+    <!-- Feature -->
+    <section class="block container">
+        <header class="block__header">
+            <h2>Host on the cloud to keep growing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatem.</p>
+        </header>
+        <article class="grid grid--cols2 feature">
+            <div class="feature__content">
+                <!-- icon start -->
+                <span class="icon-container">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51"
+                        class="icon icon--primary">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #blue;
+                                }
+
+                                .cls-2 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <circle class="cls-1" cx="25.5" cy="25.5" r="25.5" />
+                        <rect class="cls-2" x="24.4" y="27.9" width="1.6" height="15.24" rx="0.8"
+                            transform="matrix(0.78, -0.63, 0.63, 0.78, -21.26, 15.39)" />
+                        <rect class="cls-2" x="33.3" y="27.9" width="1.6" height="15.24" rx="0.8"
+                            transform="translate(24 -21.9) rotate(37.3)" />
+                    </svg>
+                </span>
+                <!-- icon ends -->
+                <h3 class="feature__heading">Super Easy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis officia veritatis officiis vitae
+                    sequi
+                    cumque velit doloremque, expedita excepturi!</p>
+                <a href="" class="link-arrow">Learn More</a>
+            </div>
+
+            <picture>
+                <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
+                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
+                <img class="feature__image" src="images/easy@2x.jpg" alt="">
+            </picture>
+        </article>
+
+        <article class="grid grid--cols2 feature">
+            <div class="feature__content">
+                <!-- icon start -->
+                <span class="icon-container">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51"
+                        class="icon icon--primary">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #blue;
+                                }
+
+                                .cls-2 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <circle class="cls-1" cx="25.5" cy="25.5" r="25.5" />
+                        <rect class="cls-2" x="24.4" y="27.9" width="1.6" height="15.24" rx="0.8"
+                            transform="matrix(0.78, -0.63, 0.63, 0.78, -21.26, 15.39)" />
+                        <rect class="cls-2" x="33.3" y="27.9" width="1.6" height="15.24" rx="0.8"
+                            transform="translate(24 -21.9) rotate(37.3)" />
+                    </svg>
+                </span>
+                <!-- icon ends -->
+                <h3 class="feature__heading">Super Easy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis officia veritatis officiis vitae
+                    sequi
+                    cumque velit doloremque, expedita excepturi!</p>
+                <a href="" class="link-arrow">Learn More</a>
+            </div>
+
+            <picture>
+                <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
+                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
+                <img class="feature__image" src="images/easy@2x.jpg" alt="">
+            </picture>
+        </article>
+    </section>
+    <!-- Feature End -->
+
+    <!-- Showcase -->
+    <section class="block block--dark block--skewed--right block-showcase">
+        <header class="block__header">
+            <h2>User Friendly Control Panel</h2>
+        </header>
+        <div class="container grid grid--cols2">
+            <!-- picture tag used by mosh here -->
+            <img class="block-showcase__image" src="images/ipad.png" alt="">
+            <ul class="list">
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <span class="icon-container">
+                                <svg class="icon icon--primary"">
+                                <use xlink:href=" images/sprite.svg#snap"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy Start & Managed Update</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eveniet modi culpa,
+                                perferendis cupiditate
+                                nobis delectus dignissimos molestias suscipit magnam, vel tempora sapiente</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <span class="icon-container">
+                                <svg class="icon icon--primary"">
+                                <use xlink:href=" images/sprite.svg#snap"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy Start & Managed Update</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eveniet modi culpa,
+                                perferendis cupiditate
+                                nobis delectus dignissimos molestias suscipit magnam, vel tempora sapiente</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                            <span class="icon-container">
+                                <svg class="icon icon--primary"">
+                                                    <use xlink:href=" images/sprite.svg#snap"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy Start & Managed Update</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eveniet modi culpa,
+                                perferendis cupiditate
+                                nobis delectus dignissimos molestias suscipit magnam, vel tempora sapiente</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Showcase Ends -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
